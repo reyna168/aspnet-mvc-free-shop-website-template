@@ -13,13 +13,9 @@
     <link href="~/Content/main.css" rel="stylesheet">
     <link href="~/Content/responsive.css" rel="stylesheet">
 
-    <script src="~/Scripts/jquery.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery.scrollUp.min.js"></script>
-    <script src="~/Scripts/price-range.js"></script>
-    <script src="~/Scripts/jquery.prettyPhoto.js"></script>
 </head>
 <body>
+
     <header id="header">
         <!--header-->
         <div class="header_top">
@@ -111,11 +107,11 @@
                         </div>
                         <div class="mainmenu pull-left">
                             <ul class="nav navbar-nav collapse navbar-collapse">
-                                <li><a href="@Url.Action("Index", "Home")" class="active">Home</a></li>
+                                <li><a href="index.html" class="active">Home</a></li>
                                 <li class="dropdown">
                                     <a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="@Url.Action("Index", "Shop")">Products</a></li>
+                                        <li><a href="shop.html">Products</a></li>
                                         <li><a href="product-details.html">Product Details</a></li>
                                         <li><a href="checkout.html">Checkout</a></li>
                                         <li><a href="cart.html">Cart</a></li>
@@ -305,6 +301,14 @@
 
     </footer><!--/Footer-->
 
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.scrollUp.min.js"></script>
+    <script src="~/Scripts/price-range.js"></script>
+    <script src="~/Scripts/jquery.prettyPhoto.js"></script>
     <script src="~/Scripts/main.js"></script>
+
+    @RenderSection("scripts", required: false)
+
 </body>
 </html>
